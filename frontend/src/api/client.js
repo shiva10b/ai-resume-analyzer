@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8001";
+const API_BASE = (
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:8001"
+).replace(/\/+$/, "");
 
 export async function analyzeResume(file, jobDescription) {
   const formData = new FormData();
