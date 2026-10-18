@@ -11,6 +11,7 @@ default_origins = [
     "http://localhost:5176",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:5176",
+    "https://ai-resume-analyzer-tawny-zeta.vercel.app",
 ]
 configured_origins = [
     origin.strip()
